@@ -28,14 +28,14 @@ public class ChooseSubject extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
+        Btn_Return = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         loading = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        jCheckBox4 = new javax.swing.JCheckBox();
-        jButton3 = new javax.swing.JButton();
+        Select_TRW = new javax.swing.JCheckBox();
+        Select_CCN = new javax.swing.JCheckBox();
+        Select_PF = new javax.swing.JCheckBox();
+        Select_OS = new javax.swing.JCheckBox();
+        Btn_Attempt = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -43,12 +43,12 @@ public class ChooseSubject extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setToolTipText("");
 
-        jButton2.setBackground(new java.awt.Color(102, 0, 0));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Return");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        Btn_Return.setBackground(new java.awt.Color(102, 0, 0));
+        Btn_Return.setForeground(new java.awt.Color(255, 255, 255));
+        Btn_Return.setText("Back");
+        Btn_Return.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                Btn_ReturnActionPerformed(evt);
             }
         });
 
@@ -76,40 +76,40 @@ public class ChooseSubject extends javax.swing.JFrame {
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
-        jCheckBox1.setText("Techinical Report Writing");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+        Select_TRW.setText("Techinical Report Writing");
+        Select_TRW.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+                Select_TRWActionPerformed(evt);
             }
         });
 
-        jCheckBox2.setText("Computer Networks");
-        jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
+        Select_CCN.setText("Computer Networks");
+        Select_CCN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox2ActionPerformed(evt);
+                Select_CCNActionPerformed(evt);
             }
         });
 
-        jCheckBox3.setText("Programming Fundamental");
-        jCheckBox3.addActionListener(new java.awt.event.ActionListener() {
+        Select_PF.setText("Programming Fundamental");
+        Select_PF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox3ActionPerformed(evt);
+                Select_PFActionPerformed(evt);
             }
         });
 
-        jCheckBox4.setText("Operating System");
-        jCheckBox4.addActionListener(new java.awt.event.ActionListener() {
+        Select_OS.setText("Operating System");
+        Select_OS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox4ActionPerformed(evt);
+                Select_OSActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(0, 51, 0));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Attempt");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        Btn_Attempt.setBackground(new java.awt.Color(0, 51, 0));
+        Btn_Attempt.setForeground(new java.awt.Color(255, 255, 255));
+        Btn_Attempt.setText("Attempt");
+        Btn_Attempt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                Btn_AttemptActionPerformed(evt);
             }
         });
 
@@ -121,14 +121,14 @@ public class ChooseSubject extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(42, 42, 42)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox2)
+                    .addComponent(Select_CCN)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Btn_Attempt, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(33, 33, 33)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jCheckBox1)
-                    .addComponent(jCheckBox3)
-                    .addComponent(jCheckBox4))
+                        .addComponent(Btn_Return, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Select_TRW)
+                    .addComponent(Select_PF)
+                    .addComponent(Select_OS))
                 .addContainerGap(32, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -136,17 +136,17 @@ public class ChooseSubject extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jCheckBox1)
+                .addComponent(Select_TRW)
                 .addGap(18, 18, 18)
-                .addComponent(jCheckBox2)
+                .addComponent(Select_CCN)
                 .addGap(18, 18, 18)
-                .addComponent(jCheckBox3)
+                .addComponent(Select_PF)
                 .addGap(21, 21, 21)
-                .addComponent(jCheckBox4)
+                .addComponent(Select_OS)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(Btn_Return)
+                    .addComponent(Btn_Attempt))
                 .addGap(22, 22, 22))
         );
 
@@ -165,29 +165,33 @@ public class ChooseSubject extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void Btn_ReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_ReturnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+        this.toBack();
+        setVisible(false);
+        new loginLayout2().toFront();
+        new loginLayout2().setState(java.awt.Frame.NORMAL);
+    }//GEN-LAST:event_Btn_ReturnActionPerformed
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+    private void Select_TRWActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Select_TRWActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+    }//GEN-LAST:event_Select_TRWActionPerformed
 
-    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
+    private void Select_CCNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Select_CCNActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox2ActionPerformed
+    }//GEN-LAST:event_Select_CCNActionPerformed
 
-    private void jCheckBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox3ActionPerformed
+    private void Select_PFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Select_PFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox3ActionPerformed
+    }//GEN-LAST:event_Select_PFActionPerformed
 
-    private void jCheckBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox4ActionPerformed
+    private void Select_OSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Select_OSActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox4ActionPerformed
+    }//GEN-LAST:event_Select_OSActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void Btn_AttemptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_AttemptActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_Btn_AttemptActionPerformed
 
     /**
      * @param args the command line arguments
@@ -225,12 +229,12 @@ public class ChooseSubject extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
+    private javax.swing.JButton Btn_Attempt;
+    private javax.swing.JButton Btn_Return;
+    private javax.swing.JCheckBox Select_CCN;
+    private javax.swing.JCheckBox Select_OS;
+    private javax.swing.JCheckBox Select_PF;
+    private javax.swing.JCheckBox Select_TRW;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel loading;
