@@ -49,7 +49,7 @@ public class loginLayout2 extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        Txt_Password = new javax.swing.JPasswordField();
+        Passwordd = new javax.swing.JPasswordField();
         Txt_username = new javax.swing.JTextField();
 
         jButton2.setBackground(new java.awt.Color(215, 91, 82));
@@ -164,7 +164,7 @@ public class loginLayout2 extends javax.swing.JFrame {
                     .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(Txt_username, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
-                        .addComponent(Txt_Password, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addComponent(Passwordd, javax.swing.GroupLayout.Alignment.LEADING))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(Btn_Signin, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -185,7 +185,7 @@ public class loginLayout2 extends javax.swing.JFrame {
                 .addGap(49, 49, 49)
                 .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(Txt_Password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Passwordd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Btn_Signin)
@@ -230,7 +230,7 @@ public class loginLayout2 extends javax.swing.JFrame {
     private void Btn_SigninActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_SigninActionPerformed
         // TODO add your handling code here:
          String LoginId = Txt_username.getText();
-        String Password = Txt_Password.getText();
+        String Password = Passwordd.getText();
         try
         {
 
@@ -320,7 +320,7 @@ public class loginLayout2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Btn_Signin;
-    private javax.swing.JPasswordField Txt_Password;
+    private javax.swing.JPasswordField Passwordd;
     private javax.swing.JTextField Txt_username;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
