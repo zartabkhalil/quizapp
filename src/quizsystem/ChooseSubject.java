@@ -34,7 +34,7 @@ public class ChooseSubject extends javax.swing.JFrame {
         Select_TRW = new javax.swing.JCheckBox();
         Select_CCN = new javax.swing.JCheckBox();
         Select_PF = new javax.swing.JCheckBox();
-        Select_OS = new javax.swing.JCheckBox();
+        bndjhsj = new javax.swing.JCheckBox();
         Btn_Attempt = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -97,10 +97,10 @@ public class ChooseSubject extends javax.swing.JFrame {
             }
         });
 
-        Select_OS.setText("Operating System");
-        Select_OS.addActionListener(new java.awt.event.ActionListener() {
+        bndjhsj.setText("Operating System");
+        bndjhsj.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Select_OSActionPerformed(evt);
+                bndjhsjActionPerformed(evt);
             }
         });
 
@@ -128,7 +128,7 @@ public class ChooseSubject extends javax.swing.JFrame {
                         .addComponent(Btn_Return, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(Select_TRW)
                     .addComponent(Select_PF)
-                    .addComponent(Select_OS))
+                    .addComponent(bndjhsj))
                 .addContainerGap(32, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -142,7 +142,7 @@ public class ChooseSubject extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(Select_PF)
                 .addGap(21, 21, 21)
-                .addComponent(Select_OS)
+                .addComponent(bndjhsj)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Btn_Return)
@@ -185,9 +185,9 @@ public class ChooseSubject extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Select_PFActionPerformed
 
-    private void Select_OSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Select_OSActionPerformed
+    private void bndjhsjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bndjhsjActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Select_OSActionPerformed
+    }//GEN-LAST:event_bndjhsjActionPerformed
 
     private void Btn_AttemptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_AttemptActionPerformed
         // TODO add your handling code here:
@@ -232,9 +232,9 @@ public class ChooseSubject extends javax.swing.JFrame {
     private javax.swing.JButton Btn_Attempt;
     private javax.swing.JButton Btn_Return;
     private javax.swing.JCheckBox Select_CCN;
-    private javax.swing.JCheckBox Select_OS;
     private javax.swing.JCheckBox Select_PF;
     private javax.swing.JCheckBox Select_TRW;
+    private javax.swing.JCheckBox bndjhsj;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel loading;
