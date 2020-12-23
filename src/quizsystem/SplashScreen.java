@@ -59,7 +59,7 @@ public class SplashScreen extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizsystem/logo.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizsystem/icon/logo.jpg"))); // NOI18N
         jLabel2.setText("UIZ");
 
         quotesText.setFont(new java.awt.Font("Ubuntu", 2, 18)); // NOI18N

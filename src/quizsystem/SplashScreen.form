@@ -130,7 +130,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/quizsystem/logo.jpg"/>
+                  <Image iconType="3" name="/quizsystem/icon/logo.jpg"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="UIZ"/>
               </Properties>

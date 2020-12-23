@@ -72,7 +72,7 @@ public class loginLayout2 extends javax.swing.JFrame {
 
         loading.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         loading.setForeground(new java.awt.Color(16, 36, 61));
-        loading.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizsystem/Untitled.png"))); // NOI18N
+        loading.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizsystem/icon/Untitled.png"))); // NOI18N
         loading.setText("App");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
