@@ -27,6 +27,7 @@ public class ChooseSubject extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         Btn_Return = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
@@ -76,6 +77,7 @@ public class ChooseSubject extends javax.swing.JFrame {
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
+        buttonGroup1.add(Select_TRW);
         Select_TRW.setText("Techinical Report Writing");
         Select_TRW.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,6 +85,7 @@ public class ChooseSubject extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup1.add(Select_CCN);
         Select_CCN.setText("Computer Networks");
         Select_CCN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,6 +93,7 @@ public class ChooseSubject extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup1.add(Select_PF);
         Select_PF.setText("Programming Fundamental");
         Select_PF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,6 +101,7 @@ public class ChooseSubject extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup1.add(bndjhsj);
         bndjhsj.setText("Operating System");
         bndjhsj.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -174,23 +179,24 @@ public class ChooseSubject extends javax.swing.JFrame {
     }//GEN-LAST:event_Btn_ReturnActionPerformed
 
     private void Select_TRWActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Select_TRWActionPerformed
-        // TODO add your handling code here:
+        availablequiz = "Techinical Report Writing" ; 
     }//GEN-LAST:event_Select_TRWActionPerformed
 
     private void Select_CCNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Select_CCNActionPerformed
-        // TODO add your handling code here:
+         availablequiz = "Computer Networks" ;
     }//GEN-LAST:event_Select_CCNActionPerformed
 
     private void Select_PFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Select_PFActionPerformed
-        // TODO add your handling code here:
+         availablequiz = "Programming Fundamentals" ;
     }//GEN-LAST:event_Select_PFActionPerformed
 
     private void bndjhsjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bndjhsjActionPerformed
-        // TODO add your handling code here:
+         availablequiz = "Operating System" ;
     }//GEN-LAST:event_bndjhsjActionPerformed
 
     private void Btn_AttemptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_AttemptActionPerformed
-        // TODO add your handling code here:
+        new QuestionLayout2 ().setVisible(true);
+        
     }//GEN-LAST:event_Btn_AttemptActionPerformed
 
     /**
@@ -235,8 +241,11 @@ public class ChooseSubject extends javax.swing.JFrame {
     private javax.swing.JCheckBox Select_PF;
     private javax.swing.JCheckBox Select_TRW;
     private javax.swing.JCheckBox bndjhsj;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel loading;
     // End of variables declaration//GEN-END:variables
+
+    private String availablequiz;
 }

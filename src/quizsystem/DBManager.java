@@ -26,7 +26,7 @@ public class DBManager
       {
           try 
           {
-           con=DriverManager.getConnection("jdbc:mysql://localhost:3306/scdlabproject","root","");
+           con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quizapplastest","root","");
 
           }
           catch (Exception e) 

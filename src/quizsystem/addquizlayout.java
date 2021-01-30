@@ -27,6 +27,7 @@ public class addquizlayout extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel2 = new javax.swing.JPanel();
         label1 = new java.awt.Label();
         jButton1 = new javax.swing.JButton();
@@ -228,6 +229,7 @@ public class addquizlayout extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup1.add(Select_TRW);
         Select_TRW.setText("Techinical Report Writing");
         Select_TRW.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -235,6 +237,7 @@ public class addquizlayout extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup1.add(Select_CCN);
         Select_CCN.setText("Computer Networks");
         Select_CCN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -242,6 +245,7 @@ public class addquizlayout extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup1.add(Select_PF);
         Select_PF.setText("Programming Fundamental");
         Select_PF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -249,6 +253,7 @@ public class addquizlayout extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup1.add(bndjhsj);
         bndjhsj.setText("Operating System");
         bndjhsj.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -457,6 +462,7 @@ public class addquizlayout extends javax.swing.JFrame {
     private javax.swing.JCheckBox Select_PF;
     private javax.swing.JCheckBox Select_TRW;
     private javax.swing.JCheckBox bndjhsj;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;

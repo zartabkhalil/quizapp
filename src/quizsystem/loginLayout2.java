@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 
@@ -109,6 +110,12 @@ public class loginLayout2 extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Bell MT", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Username");
+
+        Txtuser_username.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Txtuser_usernameActionPerformed(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Bell MT", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -289,12 +296,17 @@ public class loginLayout2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Btnadmin_exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btnadmin_exitActionPerformed
-       this.dispose();
+       JFrame frame = new JFrame("EXIT");
+        if (JOptionPane.showConfirmDialog(frame, "Confirm if you want to EXIT", "EXIT",
+                JOptionPane.YES_NO_OPTION)== JOptionPane.YES_NO_OPTION)
+        {
+            System.exit(0);
+        }
     }//GEN-LAST:event_Btnadmin_exitActionPerformed
 
     private void Btnadmin_SigninActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btnadmin_SigninActionPerformed
         // TODO add your handling code here:
-        String LoginId = Txtadmin_username.getText();
+        String Userame = Txtadmin_username.getText();
         String Password = Txtadmin_password.getText();
         try
         {
@@ -302,15 +314,15 @@ public class loginLayout2 extends javax.swing.JFrame {
             Class.forName("com.mysql.jdbc.Driver");
             try
             {
-               Connection Conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quizapp","root","");
+               Connection Conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quizapplastest","root","");
                 
                 Statement ST = Conn.createStatement();
-                ResultSet RS = ST.executeQuery("select * from adminlogin where UserName = '"+LoginId+"' and Password = '"+Password+"'");
+                ResultSet RS = ST.executeQuery("select * from adminlogin where Userame = '"+Userame+"' and Password = '"+Password+"'");
                 System.out.println("Connection Successfull");
                 if(RS.next())
                 {
                     setVisible(false);
-                    new userAddlayout().setVisible(true);
+                    new adminlayout().setVisible(true);
                     System.out.println("Login Successfull");
                 }
                 else
@@ -328,6 +340,7 @@ public class loginLayout2 extends javax.swing.JFrame {
         {
             JOptionPane.showMessageDialog(null, e);
         }
+        
     }//GEN-LAST:event_Btnadmin_SigninActionPerformed
 
     private void Btnuser_SigninActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btnuser_SigninActionPerformed
@@ -340,7 +353,7 @@ public class loginLayout2 extends javax.swing.JFrame {
             Class.forName("com.mysql.jdbc.Driver");
             try
             {
-               Connection Conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quizapp","root","");
+               Connection Conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quizapplastest","root","");
                 
                 Statement ST = Conn.createStatement();
                 ResultSet RS = ST.executeQuery("select * from userlogin where UserName = '"+LoginId+"' and Password = '"+Password+"'");
@@ -348,7 +361,7 @@ public class loginLayout2 extends javax.swing.JFrame {
                 if(RS.next())
                 {
                     setVisible(false);
-                    new ChooseSubject().setVisible(true);
+                    new QuestionLayout2(LoginId).setVisible(true);
                     System.out.println("Login Successfull");
                 }
                 else
@@ -369,8 +382,17 @@ public class loginLayout2 extends javax.swing.JFrame {
     }//GEN-LAST:event_Btnuser_SigninActionPerformed
 
     private void Btnuser_exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btnuser_exitActionPerformed
-        // TODO add your handling code here:
+         JFrame frame = new JFrame("EXIT");
+        if (JOptionPane.showConfirmDialog(frame, "Confirm if you want to EXIT", "EXIT",
+                JOptionPane.YES_NO_OPTION)== JOptionPane.YES_NO_OPTION)
+        {
+            System.exit(0);
+        }
     }//GEN-LAST:event_Btnuser_exitActionPerformed
+
+    private void Txtuser_usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txtuser_usernameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Txtuser_usernameActionPerformed
 
     /**
      * @param args the command line arguments
